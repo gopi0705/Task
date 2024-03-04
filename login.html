@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            align-items: center;
+            margin-top:100px ;
+         
+          
+        }
+
+        .fun{
+            padding: 20px;
+            outline:none;
+            margin-left:-60px ;
+            text-decoration:none;
+            
+
+            
+        }
+
+
+
+        .fun:hover{
+            font-size: 20px;
+        }
+       
+
+       .mydiv{
+        text-align: center;
+        padding: 5px;
+        animation: line 5s infinite;
+        
+        
+        color: #fff;
+        
+       
+
+        }
+        .margin1{   
+            margin-top: -5px;
+        }
+        .login-box{
+            position: relative;
+            width: 500px;
+            height: 400px;
+            background: transparent;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(8, 2, 31);
+
+        }
+
+        .input-box{
+            position: relative;
+            width: 310px;
+           margin: 30px 0;
+           border-bottom: 1px solid #fff;
+           
+        }
+        .input-box label {
+            position: relative;
+            top: 10%;
+            left: 5px;
+            
+            font-size: 1em;
+            color: #fff;
+            pointer-events: none;
+            
+        }
+        .input-box input{
+            width: 100%;
+            height: 30px;
+            background: transparent;
+            border:none;
+            outline:none;
+            font-size: 1em;
+            color: #fff;
+            padding: 0 35px 0 5px;
+        }
+
+        button{
+            background:#fff;
+            color: #000;
+            padding: 3px;
+            cursor: pointer;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            
+        }
+
+        button:hover{
+            border-radius:500px;
+            
+        }
+
+        @keyframes line{
+            0%{ color: red;}
+            50%{ color: white;}
+            100%{color: red;}
+        }
+
+        .bubble{
+            position: fixed;
+            display: flex;
+        }
+        .bubble span{
+            position: relative  ;
+            width: 20px;
+            height: 20px;
+            background: #4fc3d4 ;
+            margin: 0 4px;
+        
+            border-radius: 50px ; 
+            box-shadow: 10 10 0 10px #4fc3d4, 
+            0 0 0 50px #4fc3d4,
+            0 0 0 100px #4fc3d4 ; 
+            animation: ani 15s linear infinite; 
+            animation-duration: calc(70s / var(--i)) ;
+        }
+        .bubble span:nth-child(even){
+            background: red;
+            box-shadow: 10 10 0 10px red, 
+            0 0 0 50px red,
+            0 0 0 100px red ; 
+        }
+
+        
+
+
+        @keyframes ani{
+            0%  {
+                transform: translateY(100vh) scale(0);
+            }
+            100%  {
+                transform: translateY(-10vh) scale(1);
+            }
+
+        }
+        .bubble span:hover {
+            transform: scale(1.2); /* Example: scale up by 20% */
+        }
+        .bubble span {
+            transition: transform 0.3s ease; /* Transition for smooth scaling */
+        }
+                
+       
+
+    </style>
+</head>
+
+
+
+<body style="background-color: black;">
+
+
+
+<div class="bubble">
+    <span  style="--i:11"></span>
+    <span  style="--i:14"></span>
+    <span  style="--i:13"></span>
+    <span  style="--i:15"></span>
+    <span  style="--i:16"></span>
+    <span  style="--i:20"></span>
+    <span  style="--i:14"></span>
+    <span  style="--i:17"></span>
+    <span  style="--i:13"></span>
+    <span  style="--i:23"></span>
+    <span  style="--i:25"></span>
+    <span  style="--i:24"></span>
+    <span  style="--i:25"></span>
+    <span  style="--i:14"></span> 
+    <span  style="--i:13"></span> 
+    <span  style="--i:13"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:15"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:17"></span> 
+    <span  style="--i:13"></span> 
+    <span  style="--i:11"></span> 
+    <span  style="--i:17"></span> 
+    <span  style="--i:19"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:15"></span> 
+    <span  style="--i:13"></span> 
+    <span  style="--i:16"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:16"></span> 
+    <span  style="--i:12"></span>
+    <span  style="--i:18"></span> 
+    <span  style="--i:12"></span> 
+    <span  style="--i:11"></span> 
+    <span  style="--i:14"></span> 
+    <span  style="--i:16"></span> 
+    <span  style="--i:14"></span>
+</div>
+<script>
+    // Get all bubble elements
+    const bubbles = document.querySelectorAll('.bubble span');
+
+    // Add event listeners to each bubble element
+    bubbles.forEach(bubble => {
+        bubble.addEventListener('mouseover', function() {
+            // Change appearance when hovered over
+            this.style.transform = 'scale(1.2)'; // Example: scale up by 20%
+        });
+
+        bubble.addEventListener('mouseout', function() {
+            // Revert appearance when mouseout
+            this.style.transform = 'scale(1)'; // Revert to original size
+        });
+    });
+</script>
+<div class="wrapper">
+    
+    <div class="login-box">
+    <form action="/" method="POST">
+    
+        <div class="margin1">
+        <h3 class="mydiv">LOG IN </h3>
+      
+        </div>
+    
+        <div class="input-box">
+            <label>Name :</label>
+        <input type="text" name="name" required>
+         
+         </div>
+    
+         <div class="input-box">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+      
+        </div>
+        <button type="submit">submit</button>
+        <div class="fun">
+               
+            <a style="color: #fff;" href="#" > Forgot my password</a>
+        </div>
+    </div>
+
+  
+    
+   
+  </div>
+
+</form>
+</body>
